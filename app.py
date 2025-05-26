@@ -159,11 +159,11 @@ def show_analysis(group):
 def show_images(path_prefix):
     col1, col2 = st.columns([1, 1])
     with col1:
-        st.image(Image.open(f"{path_prefix}/pos_neg.png"), caption="Positive vs Negative Emotion Trend", use_column_width=True)
+        st.image(Image.open(f"{path_prefix}/pos_neg.png"), caption="Positive vs Negative Emotion Trend", use_container_width=True)
     with col2:
-        st.image(Image.open(f"{path_prefix}/emotion_trend.png"), caption="Emotion-wise Time Series", use_column_width=True)
+        st.image(Image.open(f"{path_prefix}/emotion_trend.png"), caption="Emotion-wise Time Series", use_container_width=True)
 
-    st.image(Image.open(f"{path_prefix}/radar.png"), caption="Average Emotion Profile (Radar Chart)", use_column_width=False)
+    st.image(Image.open(f"{path_prefix}/radar.png"), caption="Average Emotion Profile (Radar Chart)", use_container_width=False)
 
 # Logic
 if user_type == "Normal User":
